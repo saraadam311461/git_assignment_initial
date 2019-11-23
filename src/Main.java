@@ -4,6 +4,7 @@ public class Main {
 	private static ThreadSubscriber subscribers [] = {
 			new SphereArea() ,
 			new CircleArea(),
+			new CircleCircumference()
 	};
 	public static void main(String[] args) {
 		Topic mathTopic = new Topic();
