@@ -5,6 +5,6 @@ public class SummationSeries extends ThreadSubscriber {
         int sum = 0;
         for (int i = 1 ; i <= input ; i++)
         	sum += i;
-        System.out.println("The sum of the first "+ input +" numbers equals "+ sum);   
+        System.out.println("The sum of the first "+ (int) input +" numbers equals "+ sum);   
 	}
 }
