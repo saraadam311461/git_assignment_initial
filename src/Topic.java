@@ -3,23 +3,32 @@ import java.util.List;
 
 public class Topic {
 	
-	private List<ISubscriber> subscribers;
+	private List<ThreadSubscriber> subscribers;
+	double input;
 	
 	public Topic() {
-		subscribers = new ArrayList<ISubscriber>();
+		subscribers = new ArrayList<ThreadSubscriber>();
 	}
 	
-	public void addSubscriber(ISubscriber sub) {
+	public void addSubscriber(ThreadSubscriber sub) {
 		subscribers.add(sub);
 	}
 	
-	public List<ISubscriber> getSubscribers() {
+	public List<ThreadSubscriber> getSubscribers() {
 		return subscribers;
 	}
-	
-	public void dispatchEvent(String input) {
-		for (ISubscriber sub : this.getSubscribers()) {
-			sub.notifySubscriber(input);
+
+	public double getInput() {
+		return input;
+	}
+
+	public void setInput(double input) {
+		this.input = input;
+	}
+
+	public void dispatchEvent() {
+		for (ThreadSubscriber sub : this.getSubscribers()) {
+			sub.start();
 		}
 	}
 }
