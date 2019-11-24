@@ -1,0 +1,8 @@
+language: bash
+install: true
+jdk: orcalejdk13
+before_script: cd src
+script:
+- javac MainTest.java
+- java MainTest
+

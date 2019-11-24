@@ -15,6 +15,7 @@ public abstract class ThreadSubscriber extends Thread implements ISubscriber {
 
     @Override
     public abstract void notifySubscriber();
+    public abstract String execute();
 
     @Override
     public void run() {
