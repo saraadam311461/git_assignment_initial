@@ -5,7 +5,8 @@ public class Main {
 			new SphereArea() ,
 			new CircleArea(),
 			new CircleCircumference(), 
-			new SummationSeries()
+			new SummationSeries(),
+			new MultiplicationSeries()
 	};
 	public static void main(String[] args) {
 		Topic mathTopic = new Topic();
