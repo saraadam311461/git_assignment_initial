@@ -15,6 +15,6 @@ public class CircleArea extends ThreadSubscriber implements ObserverTest {
 
 	@Override
 	public Boolean test() {
-		return false;
+		return null;
 	}
 }
