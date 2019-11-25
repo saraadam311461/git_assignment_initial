@@ -23,11 +23,11 @@ public class Fibonacci extends ThreadSubscriber implements ObserverTest {
 	
 	public Boolean test() {
 		input = 4;
-		if(!execute().equals("3")) {
+		if(!execute().equals("2")) {
 			return false;
 		}
 		input = 10;
-		if(!execute().equals("55")) {
+		if(!execute().equals("34")) {
 			return false;
 		}
 		return true;
