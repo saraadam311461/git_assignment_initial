@@ -16,7 +16,6 @@ public class SphereArea extends ThreadSubscriber implements ObserverTest{
         input = 1;
 
         if(!execute().equals("12.56")) {
-            System.out.println("Sphere area = " + execute());
             return false;
         }
         return true;
