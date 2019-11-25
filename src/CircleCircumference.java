@@ -5,16 +5,17 @@ public class CircleCircumference extends ThreadSubscriber implements ObserverTes
 	public void notifySubscriber()
 	{
 		input = topic.getInput();
-		System.out.println("Circle Circumference: " + (2 * input * 3.14));
+		System.out.println("Circle Circumference: " + execute());
 	}
 
 	@Override
 	public String execute() {
-		return null;
+		return String.valueOf(2 * input * 3.14);
 	}
 
 	@Override
 	public Boolean test() {
-		return true;
+		input = 0.5;
+		return execute().equals("3.14");
 	}
 }
