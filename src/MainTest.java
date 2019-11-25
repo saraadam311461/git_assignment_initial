@@ -7,6 +7,7 @@ public class MainTest {
             new MultiplicationSeries(),
             new CircleVolum(),
 	    new LucasSeries(),
+	    new Fibonacci(),
     };
     public static void main(String[] args) {
         for (ObserverTest sub : subscribers){

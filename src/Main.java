@@ -9,6 +9,7 @@ public class Main {
 			new MultiplicationSeries(),
 			new CircleVolum(),
 			new LucasSeries(),
+			new Fibonacci(),
 	};
 	
 	public static void main(String[] args) {
