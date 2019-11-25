@@ -10,7 +10,9 @@ public class Fibonacci extends ThreadSubscriber implements ObserverTest {
 		int num1 = 0;
 		int num2 = 1;
 		int sum = 0;
-		for(int i=0 ; i < input ; i++) {
+		if(input<=1)
+			sum=input;
+		for(int i=1 ; i < input ; i++) {
 			sum = num1 + num2;
 			num1 = num2;
 			num2 = sum;
@@ -23,11 +25,11 @@ public class Fibonacci extends ThreadSubscriber implements ObserverTest {
 	
 	public Boolean test() {
 		input = 4;
-		if(!execute().equals("2")) {
+		if(!execute().equals("3")) {
 			return false;
 		}
 		input = 10;
-		if(!execute().equals("34")) {
+		if(!execute().equals("55")) {
 			return false;
 		}
 		return true;
