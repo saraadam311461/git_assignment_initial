@@ -4,19 +4,20 @@ public class SummationSeries extends ThreadSubscriber implements ObserverTest {
     @Override
 	public void notifySubscriber() {
         input = topic.getInput();
-        int sum = 0;
-        for (int i = 1 ; i <= input ; i++)
-        	sum += i;
-        System.out.println("The sum of the first "+ (int) input +" numbers equals "+ sum);   
+        System.out.println("The sum of the first "+ (int) input +" numbers equals "+ execute());   
 	}
 
     @Override
     public String execute() {
-        return null;
+    	int sum = 0;
+        for (int i = 1 ; i <= input ; i++)
+        	sum += i;
+        return String.valueOf(sum);
     }
 
     @Override
     public Boolean test() {
-        return true;
+    	input = 3;
+        return (execute().equals("6"));
     }
 }
