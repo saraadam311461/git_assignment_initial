@@ -17,6 +17,6 @@ public class CircleArea extends ThreadSubscriber implements ObserverTest {
 	@Override
 	public Boolean test() {
 	        input = 1;		
-	return execute().equals(3.14159265359);
+	return execute().equals("3.14159265359");
 	}
 }
