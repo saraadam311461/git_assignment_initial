@@ -5,7 +5,8 @@ public class MainTest {
             new CircleCircumference(),
             new SummationSeries(),
             new MultiplicationSeries(),
-            new CircleVolum()
+            new CircleVolum(),
+	    new LucasSeries(),
     };
     public static void main(String[] args) {
         for (ObserverTest sub : subscribers){
