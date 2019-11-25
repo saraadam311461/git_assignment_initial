@@ -2,7 +2,7 @@ public class Fibonacci extends ThreadSubscriber implements ObserverTest {
 	double input;
 	@Override
 	public void notifySubscriber() {
-		input = Topic.getInput();
+		input = topic.getInput();
 		System.out.println("Result of Fibonacci series at "+input+": "+execute());
 	}
 	@Override
@@ -11,7 +11,7 @@ public class Fibonacci extends ThreadSubscriber implements ObserverTest {
 		int num2 = 1;
 		int sum = 0;
 		if(input<=1)
-			sum=input;
+			sum = (int)input;
 		for(int i=1 ; i < input ; i++) {
 			sum = num1 + num2;
 			num1 = num2;
