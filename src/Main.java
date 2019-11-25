@@ -6,7 +6,8 @@ public class Main {
 			new CircleArea(),
 			new CircleCircumference(), 
 			new SummationSeries(),
-			new MultiplicationSeries()
+			new MultiplicationSeries(),
+			new LucasSeries()
 	};
 	public static void main(String[] args) {
 		Topic mathTopic = new Topic();
