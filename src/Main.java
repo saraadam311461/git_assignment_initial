@@ -7,8 +7,9 @@ public class Main {
 			new CircleCircumference(), 
 			new SummationSeries(),
 			new MultiplicationSeries(),
-			new LucasSeries()
+			new CircleVolum()
 	};
+	
 	public static void main(String[] args) {
 		Topic mathTopic = new Topic();
 		for (ThreadSubscriber sub : subscribers){
