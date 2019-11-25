@@ -25,6 +25,6 @@ public class LucasSeries extends ThreadSubscriber implements ObserverTest {
        @Override
        public Boolean test() {
            input = 5;
-           return execute().equals("7");
+           return execute().equals("11");
        }
 }
