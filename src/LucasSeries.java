@@ -19,7 +19,7 @@ public class LucasSeries extends ThreadSubscriber implements ObserverTest {
                 fn_2 = temp;
             }
             
-            return String.ValueOf(fn_1);
+            return String.valueOf(fn_1);
        }
 
        @Override
