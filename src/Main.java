@@ -13,6 +13,7 @@ public class Main {
 			new twoPowerN()
 	};
 	
+	
 	public static void main(String[] args) {
 		Topic mathTopic = new Topic();
 		for (ThreadSubscriber sub : subscribers){
