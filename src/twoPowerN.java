@@ -9,19 +9,28 @@ public class twoPowerN extends ThreadSubscriber implements ObserverTest {
 	@Override
     public String execute(){
 		int x=2;
-        double res =Math.pow(x, input );
+        double res =Math.pow( x, input );
         String result=String.valueOf(res);
         return result;
     }
+	
     @Override
     public Boolean test() {
     	input=2;
-    	if(!execute().equals("4"))
-    	     return false;
-    	else
+    	if(!execute().equals("4.0"))
+    	
     		
-    	   return true;
+    		return false;
+    		
+    	else 
+    		
+    		 return true;
+    	
+    	     
+    }
+    		
+    	   
     	
 }
 	
-}
+
