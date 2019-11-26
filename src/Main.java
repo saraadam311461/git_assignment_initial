@@ -10,7 +10,9 @@ public class Main {
 			new CircleVolum(),
 			new LucasSeries(),
 			new Fibonacci(),
+			new twoPowerN()
 	};
+	
 	
 	public static void main(String[] args) {
 		Topic mathTopic = new Topic();

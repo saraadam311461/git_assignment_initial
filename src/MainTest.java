@@ -6,9 +6,12 @@ public class MainTest {
             new SummationSeries(),
             new MultiplicationSeries(),
             new CircleVolum(),
-	    new LucasSeries(),
-	    new Fibonacci(),
+	        new LucasSeries(),
+	        new Fibonacci(),
+	        new twoPowerN()
+	        
     };
+    
     public static void main(String[] args) {
         for (ObserverTest sub : subscribers){
             Boolean res = sub.test();
