@@ -1,5 +1,7 @@
 public class SphereArea extends ThreadSubscriber implements ObserverTest{
     double input;
+    double Area;
+    String res;
 
     @Override
     public void notifySubscriber() {
@@ -8,7 +10,8 @@ public class SphereArea extends ThreadSubscriber implements ObserverTest{
     }
     @Override
     public String execute(){
-        String res = String.valueOf(4*22*input*input/7);
+        Area = 4*3.14*input*input;
+        res=""+Area;
         return res;
     }
     @Override
