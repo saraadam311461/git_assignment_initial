@@ -1,4 +1,4 @@
-public class SphereArea implements ThreadSubscriber
+public class SphereArea extends ThreadSubscriber
 {
     double input;
 
